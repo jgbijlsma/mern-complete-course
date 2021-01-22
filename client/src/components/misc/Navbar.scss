@@ -1,0 +1,42 @@
+@import "../../style/mixins.scss";
+
+.navbar {
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  color: var(--text-light-color);
+
+  .btn-logout {
+    @include lnk();
+  }
+
+  a,
+  .btn-logout {
+    margin-right: 2rem;
+    color: unset;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .navbar {
+    .title {
+      font-size: 1rem;
+    }
+
+    a {
+      margin-right: 1.2rem;
+    }
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+
+    .title {
+      margin-bottom: 0.5rem;
+      font-size: 1.25rem;
+    }
+  }
+}

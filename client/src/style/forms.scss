@@ -1,0 +1,27 @@
+.form {
+  label,
+  input,
+  textarea {
+    display: block;
+  }
+
+  label {
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+
+  input,
+  textarea {
+    margin-bottom: 1rem;
+    padding: 0.3rem 0.5rem;
+    border-radius: 5px;
+    width: 100%;
+    background: var(--dark-color);
+  }
+
+  textarea {
+    height: 200px;
+    resize: none;
+  }
+}

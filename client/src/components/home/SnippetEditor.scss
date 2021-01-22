@@ -1,0 +1,21 @@
+@import "../../style/mixins.scss";
+
+.snippet-editor {
+  @include card();
+
+  .btn-save,
+  .btn-cancel {
+    @include btn();
+    margin-right: 1rem;
+  }
+
+  .btn-save {
+    background: var(--primary-color);
+    color: var(--text-light-color);
+  }
+
+  .btn-cancel {
+    background: var(--danger-color);
+    color: var(--text-light-color);
+  }
+}
